@@ -29,12 +29,11 @@ https://ai.google.dev/gemini-api/docs/audio
 1. Clone this repository or download the script:
 ```bash
 git clone <repository-url>
-cd mp3-to-text-gemini
+cd gemini-25-audio
 ```
 
 2. Install required dependencies:
 ```bash
-
 # 1. Create a virtual environment using uv, specifying Python 3.12
 uv venv --python python3.12
 
@@ -43,8 +42,6 @@ source .venv/bin/activate
 
 # 3. Install the dependencies from your requirements.txt file
 uv pip install -r requirements.txt
-
-
 ```
 
 Or install manually:
@@ -85,7 +82,6 @@ Go to https://console.cloud.google.com/apis/library/generativelanguage.googleapi
 Select the project associated with your API key (or create a new one at https://console.cloud.google.com/projectcreate)
 
 Click "Enable" to activate the Generative Language API
-
 
 Ensure your API key has the necessary permissions
 
@@ -256,7 +252,7 @@ ffmpeg -i input.webm -acodec mp3 output.mp3
 
 ## License
 
-MIT License - See LICENSE file for details
+Apache License - See LICENSE file for details
 
 ## Contributing
 
