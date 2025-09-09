@@ -1,9 +1,11 @@
 ## README.md
 
 ```markdown
-# MP3 to Text Converter with Gemini API
+# MP3 to Text Converter with Gemini API, by using Gemini 2.5 Flash LLM.
 
-A Python script that converts audio files (MP3, WAV, AAC, FLAC, M4A, OGG) to text using Google's Gemini API. Features include audio trimming, automatic summarization, and support for large files through the Gemini Files API.
+A Python script that converts audio files (MP3, WAV, AAC, FLAC, M4A, OGG) to text using Google's Gemini API.
+Features include audio trimming, automatic summarization, and support for large files through the
+Gemini Files API.
 
 https://ai.google.dev/gemini-api/docs/audio
 
