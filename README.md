@@ -68,10 +68,47 @@ Download from [FFmpeg website](https://ffmpeg.org/download.html)
 
 ## Configuration
 
+
 Set your Gemini API key as an environment variable:
 
-```bash
 export GEMINI_API_KEY="your-api-key-here"
+
+Or pass it directly as a command-line argument with --api-key. 2. Enable the Generative Language API: You can enable the API using either the Google Cloud Console or the gcloud CLI:
+
+
+Option 1: Google Cloud Console:
+
+Go to https://console.cloud.google.com/apis/library/generativelanguage.googleapis.com
+
+Select the project associated with your API key (or create a new one at https://console.cloud.google.com/projectcreate)
+
+Click "Enable" to activate the Generative Language API
+
+
+Ensure your API key has the necessary permissions
+
+
+Option 2: gcloud CLI:
+
+Ensure gcloud is installed and initialized
+```bash
+gcloud init
+```
+
+Set your project (replace YOUR_PROJECT_ID with your Google Cloud project ID):
+```bash
+gcloud config set project YOUR_PROJECT_ID
+```
+
+
+Enable the Generative Language API:
+```bash
+gcloud services enable generativelanguage.googleapis.com
+```
+
+Verify the API is enabled:
+```bash
+gcloud services list --enabled | grep generativelanguage.googleapis.com
 ```
 
 Or pass it directly as a command-line argument.
