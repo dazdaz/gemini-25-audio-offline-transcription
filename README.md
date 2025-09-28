@@ -170,6 +170,10 @@ python mp3_to_text.py --help
 
 ## Examples
 
+```bash
+yt-dlp --extract-audio --audio-format mp3 <URL>
+```
+
 ### Example 1: Basic Transcription
 ```bash
 python mp3_to_text.py podcast.mp3 transcript.txt
@@ -253,6 +257,8 @@ ffmpeg -i input.webm -acodec mp3 output.mp3
 ## License
 
 Apache License - See LICENSE file for details
+
+Always check permission for downloading your audio file
 
 ## Contributing
 
